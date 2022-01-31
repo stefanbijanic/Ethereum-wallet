@@ -1,5 +1,5 @@
 # Ethereum-wallet
-- "Ethereum wallet" is a local service REST API custodial wallet application. 
+- "Ethereum wallet" is a local service REST API custodial wallet application. The application is connected to ropsten infura test network.
 
 #Requirements
 - MySQL
