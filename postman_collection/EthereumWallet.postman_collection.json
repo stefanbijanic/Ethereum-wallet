@@ -1,0 +1,2030 @@
+{
+	"info": {
+		"_postman_id": "4af3afd6-308b-40f7-a64c-13e7747638eb",
+		"name": "EthereumWallet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AUTH Login",
+			"item": [
+				{
+					"name": "POST User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"bijanic32@gmail.com\",\r\n    \"password\": \"Stefan123!@#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "POST User Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"bijanic32@gmail.com\",\r\n    \"password\": \"Stefan123!@#\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/user/login",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1098"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"44a-mDCH4G4jB44cIa3eT8I1keopBhY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 14:57:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"authToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWRlbnRpdHkiOiJiaWphbmljMzJAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDM2NDEwNzMsImV4cCI6MTY0NDI0NTg3MywiaXNzIjoibG9jYWxob3N0In0.aYfxq9C_yHKVELZIJn9cxe4hzeko9obpmn7xXStna2hQkdl06I76c7zdUzL9UK1PdteBk1HUkOKMFj6t0Si9DWKwD3w2EXQZTwMwrl75Dmom-nB6eFD91vZiczvH81oI0DN3AbdIW98aTMfWATYc_mTXgTfbe4zK7NHDr279r2W7K_93O6Eayy28HoAoYmh_2LBH0JDMQJ27dK8A73JNm-fIBfwXY8CWm1IwMcCSUDlJ9zy1VjrxJlmv1YmMfNAAZ6Kc2JwT0n--jgLrPvDatFNHjle-zeH2jBUJMHwY8HudkOTePXYLOLncI_Gcwe6Zg8XX1_gAfWZDAva9lsoyfg\",\n    \"refreshToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWRlbnRpdHkiOiJiaWphbmljMzJAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NDM2NDEwNzMsImV4cCI6MTY0NDI0NTg3MywiaXNzIjoibG9jYWxob3N0In0.aYfxq9C_yHKVELZIJn9cxe4hzeko9obpmn7xXStna2hQkdl06I76c7zdUzL9UK1PdteBk1HUkOKMFj6t0Si9DWKwD3w2EXQZTwMwrl75Dmom-nB6eFD91vZiczvH81oI0DN3AbdIW98aTMfWATYc_mTXgTfbe4zK7NHDr279r2W7K_93O6Eayy28HoAoYmh_2LBH0JDMQJ27dK8A73JNm-fIBfwXY8CWm1IwMcCSUDlJ9zy1VjrxJlmv1YmMfNAAZ6Kc2JwT0n--jgLrPvDatFNHjle-zeH2jBUJMHwY8HudkOTePXYLOLncI_Gcwe6Zg8XX1_gAfWZDAva9lsoyfg\",\n    \"username\": \"User\"\n}"
+						}
+					]
+				},
+				{
+					"name": "POST Administrator Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"Stefan123!@#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/administrator/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"administrator",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "POST Administrator Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"Stefan123!@#\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/administrator/login",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"administrator",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1066"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"42a-ZJfIhvsBS4OsHgjoSHEUjWp1sAs\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:03:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"authToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWRlbnRpdHkiOiJhZG1pbiIsInJvbGUiOiJhZG1pbmlzdHJhdG9yIiwiaWF0IjoxNjQzNjQxNDE1LCJleHAiOjE2NDQyNDYyMTUsImlzcyI6ImxvY2FsaG9zdCJ9.P77gVvOYV9MFlhZ8ZIuUMaF3rn1LqD97PYhw9SvBmGlnzLQuKYyJviX-bfrehiNmkiYCEFsUiEZSEKgE_TQ9FvjTf_yfCXqqZzg_1NcC7q_kMceB2MUROba0I7OxCkQ770ifn_oIN3ZOFRahtHT42fN8VMphMZzCS1w1iByu33qneTRt_ug5DViMSX3NiODizjlaQK08waOpaVBdDO2RM5afm16PIXGxA087YN_xFI8g81j7G4dW9ep9nsYtbPzNYDLxjCr4uYzpSAbG_3fDBZRZvhxpmcHxUNXlRJQj3HcLfvNYsUwK8b7b7dPXb_Llwtp9tVMGizOt6DeS9earIA\",\n    \"refreshToken\": \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWRlbnRpdHkiOiJhZG1pbiIsInJvbGUiOiJhZG1pbmlzdHJhdG9yIiwiaWF0IjoxNjQzNjQxNDE1LCJleHAiOjE2NzUxNzc0MTUsImlzcyI6ImxvY2FsaG9zdCJ9.CovBNPWnIwodf4M20YpcmTDmV6hQ-X2luoHasGO70pbwJYEblJETurkgkq5OwerfhF0D6D3hzg3Fb6CN1U24EHZsfltJ1jRPQLUn_5FBfP2IyCQ6jU-Y7hx3MDWelxPJpikPBHdENkk0V1d7QgS1PHRHlCe9DfPYIgOXaBGqpHNtKRHZj41Kne6qajJZl1rvErqKyT2Icr01Cr4f7QavtQnT0ttKNi5_xvFKj8yvAQrmIssrR5R5-wnzlTCEl3Nnv7WxqA3oEgaEt69OicZ4Tm07dA3UtO0E0MqFXW-8Li4ADFdMfhxX1btaBLFNwtUV3UzbwOn1Lzvf8Hde6CDr1Q\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Administrator",
+			"item": [
+				{
+					"name": "PUT edit Administrator",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"Stefan123!@#\",\r\n    \"isActive\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/administrator/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"administrator",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PUT edit Administrator",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"Stefan123!@#\",\r\n    \"isActive\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/administrator/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"administrator",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "173"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ad-M1SRPVw2WvoiawhkzuYUPEldAag\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:04:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"administratorId\": 1,\n    \"passwordHash\": \"$2b$10$dwsj7/wPjA4aCCAPoUjyIeVpGObN1Fitegd4NtGklTW2/.an3WFYC\",\n    \"username\": \"admin\",\n    \"isActive\": true,\n    \"createdAt\": \"2021-09-10T16:22:47.000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GET all Administrators",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/administrator/",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"administrator",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET all Administrators",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/administrator/",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"administrator",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "706"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2c2-4x45+8tdGjFQGxCk5Ujv5FPcM20\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:04:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"administratorId\": 1,\n        \"passwordHash\": \"$2b$10$dwsj7/wPjA4aCCAPoUjyIeVpGObN1Fitegd4NtGklTW2/.an3WFYC\",\n        \"username\": \"admin\",\n        \"isActive\": true,\n        \"createdAt\": \"2021-09-10T16:22:47.000Z\"\n    },\n    {\n        \"administratorId\": 5,\n        \"passwordHash\": \"$2b$10$6zI/Ewml6vZkpX59kW4xZOh/zc0DxMewTDcfCXF68sgUXbzE9X3a2\",\n        \"username\": \"admin2\",\n        \"isActive\": false,\n        \"createdAt\": \"2021-09-10T16:47:40.000Z\"\n    },\n    {\n        \"administratorId\": 6,\n        \"passwordHash\": \"$2b$10$LgzIbxxMg89ox3sK0ghPR.PruNiMPNiu5PB2jDuZRt0i3NhoyE7Yy\",\n        \"username\": \"username\",\n        \"isActive\": true,\n        \"createdAt\": \"2021-09-15T14:46:43.000Z\"\n    },\n    {\n        \"administratorId\": 7,\n        \"passwordHash\": \"$2b$10$1lJf0A21DORpoksOYnIIfObwh5giN.nodzUhtpPMQqD1Jtgl2gNcu\",\n        \"username\": \"user12345\",\n        \"isActive\": true,\n        \"createdAt\": \"2021-09-15T14:48:08.000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET Administrator by Username",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/administrator/admin",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"administrator",
+								"admin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET Administrator by Username",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/administrator/admin",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"administrator",
+										"admin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "173"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ad-M1SRPVw2WvoiawhkzuYUPEldAag\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:06:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"administratorId\": 1,\n    \"passwordHash\": \"$2b$10$dwsj7/wPjA4aCCAPoUjyIeVpGObN1Fitegd4NtGklTW2/.an3WFYC\",\n    \"username\": \"admin\",\n    \"isActive\": true,\n    \"createdAt\": \"2021-09-10T16:22:47.000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GET Administrator by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/administrator/administrator-id/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"administrator",
+								"administrator-id",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET Administrator by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/administrator/administrator-id/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"administrator",
+										"administrator-id",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "173"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ad-M1SRPVw2WvoiawhkzuYUPEldAag\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:07:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"administratorId\": 1,\n    \"passwordHash\": \"$2b$10$dwsj7/wPjA4aCCAPoUjyIeVpGObN1Fitegd4NtGklTW2/.an3WFYC\",\n    \"username\": \"admin\",\n    \"isActive\": true,\n    \"createdAt\": \"2021-09-10T16:22:47.000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "POST add new Administrator",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"newAdmin\",\r\n    \"password\": \"NewPassword123!@#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/administrator/",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"administrator",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "POST add new Administrator",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"newAdmin\",\r\n    \"password\": \"NewPassword123!@#\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/administrator/",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"administrator",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "176"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b0-zCEhcqgUK+q8eBMIE9t4KuGtJWc\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:09:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"administratorId\": 8,\n    \"passwordHash\": \"$2b$10$HOMo2U/cnZWdhoARAqGTkedzoxO18d5ZKVjRUo65I1/Wc1qN8mAIe\",\n    \"username\": \"newAdmin\",\n    \"isActive\": true,\n    \"createdAt\": \"2022-01-31T15:09:24.000Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GET all Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET all Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/user",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "947"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3b3-p6uUFv0faMc2eMTWa0gEURFhEWI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:11:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"userId\": 1,\n        \"username\": \"User\",\n        \"passwordHash\": \"$2b$10$2I5oUG5baUK9ebPN2MNJguFRpB281G2xa9.RHWpoIHtCrqXOk2LaG\",\n        \"firstName\": \"Stefan\",\n        \"lastName\": \"bijanic\",\n        \"email\": \"bijanic32@gmail.com\",\n        \"isActive\": true,\n        \"createdAt\": \"2021-09-10T18:01:57.000Z\"\n    },\n    {\n        \"userId\": 3,\n        \"username\": \"User123\",\n        \"passwordHash\": \"$2b$10$/uInF.18VSZjq6jAuHpFTeZ01pXXxJ.XmxwHFGJ7OsbiGfld2SgKi\",\n        \"firstName\": \"marko\",\n        \"lastName\": \"MM\",\n        \"email\": \"marko@gmail.com\",\n        \"isActive\": false,\n        \"createdAt\": \"2021-09-10T18:02:29.000Z\"\n    },\n    {\n        \"userId\": 6,\n        \"username\": \"user12345\",\n        \"passwordHash\": \"$2b$10$RTN9QFT39uCKAQW67yNEZO6o437hM.JEt5tsI2.Epb0knOmbqsrji\",\n        \"firstName\": \"Stefan\",\n        \"lastName\": \"Bijanic\",\n        \"email\": \"stefan@bijanic.com\",\n        \"isActive\": true,\n        \"createdAt\": \"2021-09-16T12:51:18.000Z\"\n    },\n    {\n        \"userId\": 7,\n        \"username\": \"stef\",\n        \"passwordHash\": \"$2b$10$J0u.pdvXpEdmRlH2RtbUWeuOT7VR872.6KKBa.CDMhHdtsAhNgwD.\",\n        \"firstName\": \"Stefan\",\n        \"lastName\": \"Stefanijevic\",\n        \"email\": \"biketa@bijanic.com\",\n        \"isActive\": true,\n        \"createdAt\": \"2021-09-16T13:00:18.000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET User by username",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/user/User",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"User"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET User by username",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/user/User",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"User"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "235"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"eb-DIIz1L1FG1MCHg6CoGaaxhWRAk0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:12:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": 1,\n    \"username\": \"User\",\n    \"passwordHash\": \"$2b$10$2I5oUG5baUK9ebPN2MNJguFRpB281G2xa9.RHWpoIHtCrqXOk2LaG\",\n    \"firstName\": \"Stefan\",\n    \"lastName\": \"bijanic\",\n    \"email\": \"bijanic32@gmail.com\",\n    \"isActive\": true,\n    \"createdAt\": \"2021-09-10T18:01:57.000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GET User by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/user/user-id/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"user-id",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET User by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/user/user-id/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"user-id",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "235"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"eb-DIIz1L1FG1MCHg6CoGaaxhWRAk0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:13:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": 1,\n    \"username\": \"User\",\n    \"passwordHash\": \"$2b$10$2I5oUG5baUK9ebPN2MNJguFRpB281G2xa9.RHWpoIHtCrqXOk2LaG\",\n    \"firstName\": \"Stefan\",\n    \"lastName\": \"bijanic\",\n    \"email\": \"bijanic32@gmail.com\",\n    \"isActive\": true,\n    \"createdAt\": \"2021-09-10T18:01:57.000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "POST create new User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"NewUser123\",\r\n    \"password\": \"NewUserPassword123!@#\",\r\n    \"firstName\": \"NewUser\",\r\n    \"lastName\": \"newUserLastName\",\r\n    \"email\": \"newuser@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "POST create new User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"NewUser123\",\r\n    \"password\": \"NewUserPassword123!@#\",\r\n    \"firstName\": \"NewUser\",\r\n    \"lastName\": \"newUserLastName\",\r\n    \"email\": \"newuser@mail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/user/",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "247"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f7-t0u+9lME1phPPd/Yf2G4rVeZLkU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:17:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": 8,\n    \"username\": \"NewUser123\",\n    \"passwordHash\": \"$2b$10$Im6nzJQAvS64ScGqX.qM4OKNX.1shll.dP5xAY5jT4h56DQPQ6gDG\",\n    \"firstName\": \"NewUser\",\n    \"lastName\": \"newUserLastName\",\n    \"email\": \"newuser@mail.com\",\n    \"isActive\": true,\n    \"createdAt\": \"2022-01-31T15:17:51.000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "PUT edit User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"NewUserPassword123!@#\",\r\n    \"firstName\": \"NewUser\",\r\n    \"lastName\": \"newUserLastName\",\r\n    \"email\": \"newuser@mail.com\",\r\n    \"isActive\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/user/8",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"user",
+								"8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PUT edit User",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"NewUserPassword123!@#\",\r\n    \"firstName\": \"NewUser\",\r\n    \"lastName\": \"newUserLastName\",\r\n    \"email\": \"newuser@mail.com\",\r\n    \"isActive\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/user/8",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"user",
+										"8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "247"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f7-C7fzpxrJIdQis0dwv60fQapQpFk\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:19:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"userId\": 8,\n    \"username\": \"NewUser123\",\n    \"passwordHash\": \"$2b$10$3wr9dOuXDCryGWariiUO/eBX97ST6lqqO/O15og1SIb3p0vwDaG1O\",\n    \"firstName\": \"NewUser\",\n    \"lastName\": \"newUserLastName\",\n    \"email\": \"newuser@mail.com\",\n    \"isActive\": true,\n    \"createdAt\": \"2022-01-31T15:17:51.000Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Wallet",
+			"item": [
+				{
+					"name": "GET all Wallets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/wallet",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"wallet"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET all Wallets",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/wallet",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"wallet"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "772"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"304-jo2DEgtZCgztc4g5pa0jxrurA4o\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:21:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"walletId\": 1,\n        \"walletName\": \"Prvi Wallet\",\n        \"publicAddress\": \"0x20843619fb933ea7a5cc3bcbe7eafd6823a8e19d\",\n        \"balance\": 0,\n        \"userId\": 1\n    },\n    {\n        \"walletId\": 2,\n        \"walletName\": \"Drugi Bolji Wallet\",\n        \"publicAddress\": \"0x114c58a6f62839a109e75d117b010fb6711c5465\",\n        \"balance\": 0,\n        \"userId\": 1\n    },\n    {\n        \"walletId\": 3,\n        \"walletName\": \"odlican Wallet\",\n        \"publicAddress\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n        \"balance\": 0.997785419014716,\n        \"userId\": 7\n    },\n    {\n        \"walletId\": 8,\n        \"walletName\": \"stef\",\n        \"publicAddress\": \"0xc20a5819f18d3a61910103b1bcf75b58b76590bd\",\n        \"balance\": 0.001,\n        \"userId\": 7\n    },\n    {\n        \"walletId\": 9,\n        \"walletName\": \"stef\",\n        \"publicAddress\": \"0xd17aa02284078fa5272d9209c0fa64d4b81e58ad\",\n        \"balance\": 0,\n        \"userId\": 7\n    },\n    {\n        \"walletId\": 10,\n        \"walletName\": \"aaaaaaaaa\",\n        \"publicAddress\": \"0x1f488b12a89394adeff8a429c6ec4de711bad159\",\n        \"balance\": 0,\n        \"userId\": 7\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET all Wallets by user ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/wallet/user/7",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"wallet",
+								"user",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET all Wallets by user ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/wallet/user/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"wallet",
+										"user",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "260"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"104-h8d2jG+nhQNFywu43g0IihlnJGo\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:22:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"walletId\": 1,\n        \"walletName\": \"Prvi Wallet\",\n        \"publicAddress\": \"0x20843619fb933ea7a5cc3bcbe7eafd6823a8e19d\",\n        \"balance\": 0,\n        \"userId\": 1\n    },\n    {\n        \"walletId\": 2,\n        \"walletName\": \"Drugi Bolji Wallet\",\n        \"publicAddress\": \"0x114c58a6f62839a109e75d117b010fb6711c5465\",\n        \"balance\": 0,\n        \"userId\": 1\n    }\n]"
+						},
+						{
+							"name": "GET all Wallets by user ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/wallet/user/7",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"wallet",
+										"user",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "513"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"201-K0JNPJNngH1pPV2NwqP3l+FYeqk\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:26:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"walletId\": 3,\n        \"walletName\": \"odlican Wallet\",\n        \"publicAddress\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n        \"balance\": 0.997785419014716,\n        \"userId\": 7\n    },\n    {\n        \"walletId\": 8,\n        \"walletName\": \"stef\",\n        \"publicAddress\": \"0xc20a5819f18d3a61910103b1bcf75b58b76590bd\",\n        \"balance\": 0.001,\n        \"userId\": 7\n    },\n    {\n        \"walletId\": 9,\n        \"walletName\": \"stef\",\n        \"publicAddress\": \"0xd17aa02284078fa5272d9209c0fa64d4b81e58ad\",\n        \"balance\": 0,\n        \"userId\": 7\n    },\n    {\n        \"walletId\": 10,\n        \"walletName\": \"aaaaaaaaa\",\n        \"publicAddress\": \"0x1f488b12a89394adeff8a429c6ec4de711bad159\",\n        \"balance\": 0,\n        \"userId\": 7\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GET Wallet by public address",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/wallet/address/0xa9343b118be06df5c20d195ae203d4b8eec5f1d2",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"wallet",
+								"address",
+								"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET Wallet by public address",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/wallet/address/0x20843619fb933ea7a5cc3bcbe7eafd6823a8e19d",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"wallet",
+										"address",
+										"0x20843619fb933ea7a5cc3bcbe7eafd6823a8e19d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "125"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7d-fLsg6u7XIb0O0U/i2nPKe4vk53w\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:23:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"walletId\": 1,\n    \"walletName\": \"Prvi Wallet\",\n    \"publicAddress\": \"0x20843619fb933ea7a5cc3bcbe7eafd6823a8e19d\",\n    \"balance\": 0,\n    \"userId\": 1\n}"
+						},
+						{
+							"name": "GET Wallet by public address",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/wallet/address/0xa9343b118be06df5c20d195ae203d4b8eec5f1d2",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"wallet",
+										"address",
+										"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "144"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"90-sMuUO2GA6LX9HiuEM300zBUhImY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:26:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"walletId\": 3,\n    \"walletName\": \"odlican Wallet\",\n    \"publicAddress\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n    \"balance\": 0.997785419014716,\n    \"userId\": 7\n}"
+						}
+					]
+				},
+				{
+					"name": "GET Wallet by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/wallet/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"wallet",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET Wallet by ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/wallet/3",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"wallet",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "144"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"90-sMuUO2GA6LX9HiuEM300zBUhImY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:27:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"walletId\": 3,\n    \"walletName\": \"odlican Wallet\",\n    \"publicAddress\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n    \"balance\": 0.997785419014716,\n    \"userId\": 7\n}"
+						}
+					]
+				},
+				{
+					"name": "POST create new Wallet for User by UserID",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"walletName\": \"New Wallet\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/wallet/user/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"wallet",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "POST create new Wallet for User by UserID",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"walletName\": \"New Wallet\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/wallet/user/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"wallet",
+										"user",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "125"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7d-LpSZE+bUUJpBHKUxXRipLZyndH0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:29:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"walletId\": 11,\n    \"walletName\": \"New Wallet\",\n    \"publicAddress\": \"0x76574a7d5525f73a228d77c55b193c382e1c209f\",\n    \"balance\": 0,\n    \"userId\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "PUT edit Wallet by Wallet ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"walletName\": \"New Wallet change name\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/wallet/11",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"wallet",
+								"11"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PUT edit Wallet by Wallet ID",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"walletName\": \"New Wallet change name\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/wallet/11",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"wallet",
+										"11"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "137"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"89-8V86IEzLrt8mdRyFCZ/NDC9GgxI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:31:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"walletId\": 11,\n    \"walletName\": \"New Wallet change name\",\n    \"publicAddress\": \"0x76574a7d5525f73a228d77c55b193c382e1c209f\",\n    \"balance\": 0,\n    \"userId\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "GET update on Wallet balance by Public Address",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/wallet/update/0xa9343b118be06df5c20d195ae203d4b8eec5f1d2",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"wallet",
+								"update",
+								"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET update on Wallet balance by Public Address",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/wallet/update/0xa9343b118be06df5c20d195ae203d4b8eec5f1d2",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"wallet",
+										"update",
+										"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "144"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"90-sMuUO2GA6LX9HiuEM300zBUhImY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:33:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"walletId\": 3,\n    \"walletName\": \"odlican Wallet\",\n    \"publicAddress\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n    \"balance\": 0.997785419014716,\n    \"userId\": 7\n}"
+						}
+					]
+				},
+				{
+					"name": "POST create transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"publicAddress\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\r\n    \"addressTo\": \"0xc20a5819f18d3a61910103b1bcf75b58b76590bd\",\r\n    \"amount\": 0.005\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3001/wallet/send/user/7",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"wallet",
+								"send",
+								"user",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "POST create transaction",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"publicAddress\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\r\n    \"addressTo\": \"0xc20a5819f18d3a61910103b1bcf75b58b76590bd\",\r\n    \"amount\": 0.005\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3001/wallet/send/user/7",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"wallet",
+										"send",
+										"user",
+										"7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "144"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"90-7iJLe5XlM+BkIURRo+WT02r7kLM\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:37:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"walletId\": 3,\n    \"walletName\": \"odlican Wallet\",\n    \"publicAddress\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n    \"balance\": 0.992734493911123,\n    \"userId\": 7\n}"
+						}
+					]
+				},
+				{
+					"name": "GET Wallet Transaction History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/wallet/history/0xa9343b118be06df5c20d195ae203d4b8eec5f1d2",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"wallet",
+								"history",
+								"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET Wallet Transaction History",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3001/wallet/history/0xa9343b118be06df5c20d195ae203d4b8eec5f1d2",
+									"host": [
+										"localhost"
+									],
+									"port": "3001",
+									"path": [
+										"wallet",
+										"history",
+										"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:3000"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "3472"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d90-wuQM3WQhBl1OCmfNUpbGzfwMkD0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 31 Jan 2022 15:39:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"time\": \"2021-04-29T11:58:56.000Z\",\n        \"from\": \"0x687422eea2cb73b5d3e242ba5456b782919afc85\",\n        \"to\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n        \"amount\": \"1\",\n        \"gas\": \"314150\",\n        \"gasPrice\": \"0.00000000121\",\n        \"gasUsed\": \"0.000000000000021\",\n        \"hash\": \"0xe01bc65831b78a13513c5783a327cfa48a30ded3c07e188029ac0ad219135fe0\",\n        \"blockHash\": \"0x38c323c9025359386005925cc32e800087aad80b4267ece314e954b6785f3152\"\n    },\n    {\n        \"time\": \"2021-09-10T21:48:46.000Z\",\n        \"from\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n        \"to\": \"0x20843619fb933ea7a5cc3bcbe7eafd6823a8e19d\",\n        \"amount\": \"0.0001\",\n        \"gas\": \"21000\",\n        \"gasPrice\": \"0.000000004015761197\",\n        \"gasUsed\": \"0.000000000000021\",\n        \"hash\": \"0x799aa3f4b8aa9eb0818c17237440b88a6ce9212fa6018ae29e236ba4af216d3a\",\n        \"blockHash\": \"0x89e83dbb19df9aa117cca59df77c2651080a2bc50959bebc1080e14e4d3a8dbc\"\n    },\n    {\n        \"time\": \"2021-09-10T22:12:52.000Z\",\n        \"from\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n        \"to\": \"0x20843619fb933ea7a5cc3bcbe7eafd6823a8e19d\",\n        \"amount\": \"0.0001\",\n        \"gas\": \"21000\",\n        \"gasPrice\": \"0.00000000485\",\n        \"gasUsed\": \"0.000000000000021\",\n        \"hash\": \"0x5b0434e6cd98108fdfaf2a8bbf99de650aaf03b79b923d682229cc5f26479982\",\n        \"blockHash\": \"0x0fd2f8b8659d4a771e39605812731ab8fc86ead2a0e81d4084f35a05d7c7eaf8\"\n    },\n    {\n        \"time\": \"2021-09-10T22:13:55.000Z\",\n        \"from\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n        \"to\": \"0x20843619fb933ea7a5cc3bcbe7eafd6823a8e19d\",\n        \"amount\": \"0.0001\",\n        \"gas\": \"21000\",\n        \"gasPrice\": \"0.00000000485\",\n        \"gasUsed\": \"0.000000000000021\",\n        \"hash\": \"0x6904212274699360a797c983fd539ba8bb64fc4843679bbce702d14516395b84\",\n        \"blockHash\": \"0x7595db07a4312bdc2863c5958e33b7089eadb84f108e34303dfc40424073881b\"\n    },\n    {\n        \"time\": \"2021-09-10T22:15:58.000Z\",\n        \"from\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n        \"to\": \"0x20843619fb933ea7a5cc3bcbe7eafd6823a8e19d\",\n        \"amount\": \"0.0001\",\n        \"gas\": \"21000\",\n        \"gasPrice\": \"0.00000000485\",\n        \"gasUsed\": \"0.000000000000021\",\n        \"hash\": \"0x61423a72d10a3d7fa2d96974ab8a7322d5751305f6bbb03fd2b925e8df775ade\",\n        \"blockHash\": \"0xb1f0c66c1de9ba2cc087eee35ff18b59a71aa1a6f733b6b49699576aae19c48c\"\n    },\n    {\n        \"time\": \"2021-09-10T22:16:59.000Z\",\n        \"from\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n        \"to\": \"0x20843619fb933ea7a5cc3bcbe7eafd6823a8e19d\",\n        \"amount\": \"0.0001\",\n        \"gas\": \"21000\",\n        \"gasPrice\": \"0.00000000485\",\n        \"gasUsed\": \"0.000000000000021\",\n        \"hash\": \"0xe6b027875c0d95ca0293e9b65ce4b30f55fe6352479a74be4570d2cef4d0129e\",\n        \"blockHash\": \"0xb75ac97e8142db89e2ccb23df54ef9c4b8a81e417cc8454a63b3a4bd0e0faecf\"\n    },\n    {\n        \"time\": \"2021-09-10T22:19:43.000Z\",\n        \"from\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n        \"to\": \"0x20843619fb933ea7a5cc3bcbe7eafd6823a8e19d\",\n        \"amount\": \"0.0001\",\n        \"gas\": \"21000\",\n        \"gasPrice\": \"0.00000000485\",\n        \"gasUsed\": \"0.000000000000021\",\n        \"hash\": \"0x35278920e37d7e26625cd98960d9c22134663336b4e70c1ce4264b0e12d9ceca\",\n        \"blockHash\": \"0xd60abe6dfd3a3192cd5278f75b897ff919a911ee943e92959ff95aee204f70f2\"\n    },\n    {\n        \"time\": \"2021-09-16T15:27:50.000Z\",\n        \"from\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n        \"to\": \"0xc20a5819f18d3a61910103b1bcf75b58b76590bd\",\n        \"amount\": \"0.001\",\n        \"gas\": \"21000\",\n        \"gasPrice\": \"0.000000001000000007\",\n        \"gasUsed\": \"0.000000000000021\",\n        \"hash\": \"0x85172e70614a393610c7e3c33786e03d65b46b5f98cfcd3b98e599530effe667\",\n        \"blockHash\": \"0x41c0658aebc01a73e73b349c968b392798be7bcfad44bca7f9f219ddd3bcefd2\"\n    },\n    {\n        \"time\": \"2022-01-31T15:36:22.000Z\",\n        \"from\": \"0xa9343b118be06df5c20d195ae203d4b8eec5f1d2\",\n        \"to\": \"0xc20a5819f18d3a61910103b1bcf75b58b76590bd\",\n        \"amount\": \"0.005\",\n        \"gas\": \"21000\",\n        \"gasPrice\": \"0.000000002425004933\",\n        \"gasUsed\": \"0.000000000000021\",\n        \"hash\": \"0x92ea040e774bfcf1830e5f58e5c32700a285b233decba1818d6560498b0eb82e\",\n        \"blockHash\": \"0x0a51b0e5513e82422eb1495d2d78e7efa4f0364fbc37374caee601dabb6ae70d\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
